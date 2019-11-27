@@ -1,0 +1,47 @@
+{
+  "name": "@paystackhq/pkg-boilerplate",
+  "author": "Backend Packages",
+  "description": "",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --collectCoverage=true",
+    "build": "tsc",
+    "lint": "eslint 'src/**' 'tests/**'",
+    "lint-fix": "npm run lint -- --fix",
+    "typedoc": "typedoc --out docs ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaystackHQ/pkg-boilerplate.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/PaystackHQ/pkg-boilerplate/issues"
+  },
+  "homepage": "https://github.com/PaystackHQ/pkg-boilerplate",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.0",
+    "@types/sinon": "^7.0.13",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-you-dont-need-lodash-underscore": "^6.7.0",
+    "husky": "^3.0.5",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.3.0",
+    "typedoc": "^0.15.0",
+    "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "dependencies": {}
+}
