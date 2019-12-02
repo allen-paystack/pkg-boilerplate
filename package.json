@@ -1,5 +1,5 @@
 {
-  "name": "@paystackhq/pkg-boilerplate",
+  "name": "@allen-paystack/pkg-boilerplate",
   "author": "Backend Packages",
   "description": "",
   "main": "lib/index.js",
@@ -13,13 +13,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PaystackHQ/pkg-boilerplate.git"
+    "url": "git+https://github.com/allen-paystack/pkg-boilerplate.git"
   },
   "keywords": [],
   "bugs": {
-    "url": "https://github.com/PaystackHQ/pkg-boilerplate/issues"
+    "url": "https://github.com/allen-paystack/pkg-boilerplate/issues"
   },
-  "homepage": "https://github.com/PaystackHQ/pkg-boilerplate",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "homepage": "https://github.com/allen-paystack/pkg-boilerplate",
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.0",
